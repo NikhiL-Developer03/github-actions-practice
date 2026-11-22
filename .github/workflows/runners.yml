@@ -1,0 +1,41 @@
+name: GitHub Hosted Runners
+
+on:
+  push:
+
+jobs:
+  ubuntu-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print operating system
+        run: 'echo "Operating System: ${{ runner.os }}"'
+
+      - name: Print hostname
+        run: hostname
+
+      - name: Print current user
+        run: whoami
+
+  windows-job:
+    runs-on: windows-latest
+    steps:
+      - name: Print operating system
+        run: 'echo "Operating System: ${{ runner.os }}"'
+
+      - name: Print hostname
+        run: hostname
+
+      - name: Print current user
+        run: whoami
+
+  macos-job:
+    runs-on: macos-latest
+    steps:
+      - name: Print operating system
+        run: 'echo "Operating System: ${{ runner.os }}"'
+
+      - name: Print hostname
+        run: hostname
+
+      - name: Print current user
+        run: whoami
