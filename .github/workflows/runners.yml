@@ -16,6 +16,20 @@ jobs:
       - name: Print current user
         run: whoami
 
+      - name: Check preinstalled tools
+        run: |
+          echo "Docker version:"
+          docker --version
+
+          echo "Python version:"
+          python3 --version
+
+          echo "Node.js version:"
+          node --version
+
+          echo "Git version:"
+          git --version
+
   windows-job:
     runs-on: windows-latest
     steps:
