@@ -24,6 +24,3 @@ jobs:
 
       - name: Print operating system
         run: 'echo "Runner OS: $RUNNER_OS"'
-
-      - name: Intentional failure test
-        run: exit 1
