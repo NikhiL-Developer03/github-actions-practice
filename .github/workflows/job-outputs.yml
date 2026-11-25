@@ -21,4 +21,4 @@ jobs:
 
     steps:
       - name: Print generated date
-        run: echo "Date received from generate job: ${{ needs.generate.outputs.today }}"
+        run: 'echo "Date received from generate job: ${{ needs.generate.outputs.today }}"'
