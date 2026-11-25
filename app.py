@@ -1,3 +1,4 @@
+# Basic Python Code
 # Import Flask framework and render_template function
 from flask import Flask, render_template
 
